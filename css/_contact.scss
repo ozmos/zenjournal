@@ -1,0 +1,43 @@
+form {
+    max-width: 600px;
+    margin: auto;
+    label {
+        display: block;
+    }
+    label,
+    input,
+    textarea {
+        padding: $padding/2;
+    }
+    input,
+    textarea {
+        border: 1px solid $secondary-dark;
+        border-radius: 0;
+    }
+    input,
+    textarea {
+        width: 100%;
+    }
+    #m66 {
+        display: none;
+    }
+    #submit {
+        background-color: $primary-dark;
+        color: $primary-light;
+        border: none;
+        margin-top: $padding;
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+        transition: 0.35s;
+    }
+    #submit:hover {
+        cursor: pointer;
+        background-color: $hover;
+        color: $primary-dark;
+        transition: 0.1s;
+    }
+    #submit:active {
+        background-color: $active;
+        color: $primary-light;
+    }
+}

@@ -1,0 +1,43 @@
+/* desktop rules */
+
+@media (min-width: 769px) {
+    body {
+        background: linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.93)), url(/images/snow.jpg);
+        background-attachment: fixed;
+    }
+    .card {
+        margin: $padding;
+    }
+    //create column grids
+    @for $i from 1 through 12 {
+        .col-#{$i} {
+            width: 100%/12 * $i;
+        }
+    }
+    /* nav rules */
+    nav {
+        .nav-list {
+            min-width: 400px;
+            max-width: 1400px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #menu-toggle {
+            display: none;
+        }
+    }
+}
+
+
+/* mobile rules */
+
+@media (max-width: 768px) {
+    nav {
+        .nav-list {
+            position: absolute;
+            top: $nav-height;
+            width: 100%;
+            padding: $padding;
+        }
+    }
+}

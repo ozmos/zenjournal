@@ -1,0 +1,29 @@
+footer {
+    justify-content: space-around;
+    align-items: center;
+    min-height: 9rem;
+    color: $secondary-dark;
+    padding: $padding 0;
+    font-size: 0.7rem;
+    position: relative;
+    top: $nav-height;
+    bottom: 0;
+    section {
+        padding: 0 $padding;
+    }
+    a:link,
+    a:visited,
+    a:active {
+        color: $secondary-dark;
+    }
+    a:hover {
+        color: $primary-dark;
+        border: 1px dotted $primary-dark;
+    }
+    .nav-item {
+        margin-left: $padding;
+    }
+    .nav-list:first-child {
+        margin-left: 0;
+    }
+}

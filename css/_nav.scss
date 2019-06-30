@@ -1,0 +1,58 @@
+/* navbar */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $primary-dark;
+    color: $primary-light;
+    height: $nav-height;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: $title-font;
+    font-size: 1.2rem;
+    z-index: 1000;
+    .nav-list {
+        background-color: $primary-dark;
+        margin: 0;
+        display: none;
+    }
+    .nav-item {
+        line-height: 2;
+    }
+    a {
+        padding: 1em;
+    }
+    a:link,
+    a:visited,
+    a:active {
+        color: $primary-light;
+    }
+    /* menu toggle button */
+    $size: 30px;
+    $color: $primary-light;
+    $thickness: $size / 8;
+    $margin: $thickness * 2;
+    .toggle-reveal {
+        display: flex;
+        flex-direction: column;
+    }
+    #menu-toggle {
+        position: relative;
+        display: inline-block;
+        width: $size;
+    }
+    #menu-toggle:hover {
+        cursor: pointer;
+    }
+    .hamburger {
+        width: 100%;
+        border: 1px solid $color;
+        height: $thickness;
+        background: $color;
+    }
+    .top {
+        margin-bottom: $margin;
+    }
+}

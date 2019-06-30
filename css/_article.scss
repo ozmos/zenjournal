@@ -1,0 +1,31 @@
+/* articles */
+
+.article-header {
+    flex-direction: column-reverse;
+    text-align: center;
+    .art-heading {
+        font-size: 2.2rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+    }
+    .art-heading {
+        a:link,
+        a:visited,
+        a:active {
+            color: black;
+        }
+    }
+    .art-subheading {
+        font-size: 0.9rem;
+        font-style: italic;
+        color: $secondary-dark;
+    }
+}
+
+.feed {
+    h2 {
+        margin: 0 0 2em 0;
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+}

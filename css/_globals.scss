@@ -1,0 +1,118 @@
+/* containers */
+
+main {
+    position: relative;
+    top: $nav-height;
+}
+
+.outer {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4rem 0 4rem 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-top: $padding;
+    padding: 0 $padding/2;
+    p {
+        text-align: justify;
+        letter-spacing: 0.05em;
+    }
+}
+
+
+/* render line breaks */
+
+p {
+    white-space: pre-line;
+}
+
+
+/* responsive images */
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* links and lists */
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page-anchor {
+    position: absolute;
+    top: 0;
+}
+
+
+/* hover green light */
+
+.hover-green-light:link,
+.hover-green-light:visited {
+    color: $highlight;
+    transition: 0.35s;
+}
+
+.hover-green-light:hover {
+    color: $primary-light;
+    background-color: $hover;
+    transition: 0.1s;
+}
+
+.hover-green-light:active {
+    background-color: $active;
+    color: $highlight;
+}
+
+
+/* hover green dark text */
+
+.hover-green-dark {
+    transition: 0.35s;
+}
+
+.hover-green-dark:hover {
+    background-color: $hover;
+    color: $primary-dark;
+    transition: 0.1s;
+}
+
+.hover-green-dark:active {
+    color: $primary-light;
+    background-color: $active;
+}
+
+
+/* divider */
+
+hr {
+    border: none;
+    height: 1px;
+    color: $secondary-dark;
+    background-color: $secondary-dark;
+    margin: 4rem 1rem;
+}
+
+.divider {
+    position: relative;
+    top: $nav-height;
+    margin: 0 1rem;
+}
