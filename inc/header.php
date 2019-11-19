@@ -3,8 +3,8 @@
   <!-- header -->
 <header class="flex">
   <div class="headings">
-    <h1>Zen Journal</h1>
-    <h2 class="subheading">Practical instructions and personal reflections</h2>
+    <h1>Samadhi Journal</h1>
+    <h2 class="subheading">Reflections and instructions in mindfulness meditation</h2>
   </div> 
 
 </header>

@@ -3,31 +3,31 @@
 $post_data = [
   'home' => [
     'post' => false,
-    'title' => 'Zen Journal - Home',
-    'description' => 'Home page for Zen Journal',
+    'title' => 'Samadhi Journal - Home',
+    'description' => 'Home page for Samadhi Journal',
     'id' => 'home',
     'img' => 'meditation-grass.jpg',
     'alt' => 'man sitting in meditation on grass',
-    'art_title' => 'Welcome to Zen Journal',
+    'art_title' => 'Welcome to Samadhi Journal',
     'auth' => 'Osamu Morozumi',
     'date' => '7th June 2019',
     'content' => '<p>Here you will find information on mindfulness and meditation from my own perspective, and that of other experienced meditators.  This is not intended to be an exhaustive instructive manual, but rather a collection of short instructions and personal reflections. Take what you find useful or appealing from the articles here and put it to use in your own practice of meditation.</p>'
   ],
   'articles' => [
     'post' => false,
-    'title' => 'Zen Journal - Articles',
-    'description' => 'Blog feed for Zen Journal',
+    'title' => 'Samadhi Journal - Articles',
+    'description' => 'Blog feed for Samadhi Journal',
     'id' => 'articles',
     'img' => 'meditation-grass.jpg',
     'alt' => 'man sitting in meditation on grass',
-    'art_title' => 'Latest articles for Zen Journal',
+    'art_title' => 'Latest articles for Samadhi Journal',
     'auth' => '',
     'date' => '',
     'content' => ''
   ],
   'intro' => [
     'post' => true,
-    'title' => 'Zen Journal - What is Mindfulness',
+    'title' => 'Samadhi Journal - What is Mindfulness',
     'description' => 'Article describing what mindfulness is',
     'id' => 'intro',
     'img' => 'balance.jpg',
@@ -57,7 +57,7 @@ $post_data = [
     ],
   'sitting_meditation' => [
     'post' => true,
-    'title' => 'Zen Journal - Sitting Meditation',
+    'title' => 'Samadhi Journal - Sitting Meditation',
   'description' => 'Brief instructions on how to sit meditation',
   'id' => 'sitting_meditation',
   'img' => 'sitting-meditation.jpg',
@@ -86,7 +86,7 @@ $post_data = [
   ],
   'walking_meditation' => [
     'post' => true,
-    'title' => 'Zen Journal - Walking Meditation',
+    'title' => 'Samadhi Journal - Walking Meditation',
     'description' => 'Brief instructions on how to practice walking meditation',
     'id' => 'walking_meditation',
     'img' => 'road.jpg',
@@ -110,7 +110,7 @@ $post_data = [
   ],
   'hiking' => [
     'post' => true,
-    'title' => 'Zen Journal - Third party article - hiking',
+    'title' => 'Samadhi Journal - Third party article - hiking',
     'description' => 'Blog article from smilingmind.com.au about mindful hiking',
     'id' => 'hiking',
     'img' => 'hiking.jpg',
@@ -157,8 +157,8 @@ From <a class="hover-green-light" href="https://blog.smilingmind.com.au/take-a-m
   ],
   'contact' => [
     'post' => false,
-    'title' => 'Zen Journal - Contact',
-    'description' => 'Contact page for Zen Journal',
+    'title' => 'Samadhi Journal - Contact',
+    'description' => 'Contact page for Samadhi Journal',
     'id' => 'contact',
     'img' => '',
     'alt' => '',

@@ -8,7 +8,7 @@
     <title><?php echo $page['title']; ?></title>
     <meta name="author" content="Osamu Morozumi" />
     <meta name="description" content="<?php echo $page['description']; ?>" />
-    <meta name="keywords" content="meditation, mindfulness, blog, relaxation" />
+    <meta name="keywords" content="meditation, mindfulness, blog, relaxation, samadhi, zen" />
     <link href="https://fonts.googleapis.com/css?family=Inconsolata%7CNoto+Sans&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/styles.css" />
     <!--[if lt IE 9]>
