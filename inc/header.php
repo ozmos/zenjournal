@@ -24,7 +24,7 @@
       <a class="hover-green-dark" href="contact.php">Contact</a>
     </li>
   </ul>
-  <div id="menu-toggle" class="dropbtn" onclick="classToggle('nav', 'toggle-reveal')">
+  <div id="menu-toggle" class="dropbtn" ontouchstart="classToggle('nav', 'toggle-reveal')">
     <div class="hamburger top">
     </div>
     <div class="hamburger top">
