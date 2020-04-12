@@ -1,0 +1,46 @@
+clamscan -r pet-project-raw-backup/
+pet-project-raw-backup/index.php: OK
+pet-project-raw-backup/contact.php: OK
+pet-project-raw-backup/walking_meditation.php: OK
+pet-project-raw-backup/js/nav.js: OK
+pet-project-raw-backup/sitting_meditation.php: OK
+pet-project-raw-backup/intro.php: OK
+pet-project-raw-backup/css/_header.scss: OK
+pet-project-raw-backup/css/_article.scss: OK
+pet-project-raw-backup/css/_contact.scss: OK
+pet-project-raw-backup/css/_footer.scss: OK
+pet-project-raw-backup/css/_sidebar.scss: OK
+pet-project-raw-backup/css/_variables.scss: OK
+pet-project-raw-backup/css/styles.scss: OK
+pet-project-raw-backup/css/_nav.scss: OK
+pet-project-raw-backup/css/styles.css.map: OK
+pet-project-raw-backup/css/styles.css: OK
+pet-project-raw-backup/articles.php: OK
+pet-project-raw-backup/process.php: OK
+pet-project-raw-backup/images/road.jpg: OK
+pet-project-raw-backup/images/balance.jpg: OK
+pet-project-raw-backup/images/meditation-grass.jpg: OK
+pet-project-raw-backup/images/hiking.jpg: OK
+pet-project-raw-backup/images/sitting-meditation.jpg: OK
+pet-project-raw-backup/images/snow.jpg: OK
+pet-project-raw-backup/images/light-texture.jpg: OK
+pet-project-raw-backup/images/profile.jpg: OK
+pet-project-raw-backup/inc/post_data.php: OK
+pet-project-raw-backup/inc/header.php: OK
+pet-project-raw-backup/inc/mail_functions.php: OK
+pet-project-raw-backup/inc/footer.php: OK
+pet-project-raw-backup/inc/html_head.php: OK
+pet-project-raw-backup/inc/aside.php: OK
+pet-project-raw-backup/.ftpquota: OK
+pet-project-raw-backup/templates/single.php: OK
+
+----------- SCAN SUMMARY -----------
+Known viruses: 6151733
+Engine version: 0.100.3
+Scanned directories: 10
+Scanned files: 34
+Infected files: 0
+Data scanned: 2.87 MB
+Data read: 2.82 MB (ratio 1.02:1)
+Time: 88.544 sec (1 m 28 s)
+
