@@ -1,5 +1,4 @@
 /* containers */
-
 main {
     position: relative;
     top: $nav-height;
@@ -7,7 +6,6 @@ main {
 
 .outer {
     width: 100%;
-    max-width: 1400px;
     margin: 0 auto;
     padding: 4rem 0 4rem 0;
 }
@@ -23,30 +21,26 @@ main {
 .card {
     margin-top: $padding;
     padding: 0 $padding/2;
+
     p {
-        text-align: justify;
+        text-align: left;
         letter-spacing: 0.05em;
     }
+
 }
 
-
 /* render line breaks */
-
 p {
     white-space: pre-line;
 }
 
-
 /* responsive images */
-
 img {
     width: 100%;
     height: auto;
 }
 
-
 /* links and lists */
-
 ul {
     list-style: none;
     margin: 0;
@@ -62,11 +56,8 @@ a {
     top: 0;
 }
 
-
 /* hover green light */
-
-.hover-green-light:link,
-.hover-green-light:visited {
+.hover-green-light:link, .hover-green-light:visited {
     color: $highlight;
     transition: 0.35s;
 }
@@ -82,9 +73,7 @@ a {
     color: $highlight;
 }
 
-
 /* hover green dark text */
-
 .hover-green-dark {
     transition: 0.35s;
 }
@@ -100,9 +89,7 @@ a {
     background-color: $active;
 }
 
-
 /* divider */
-
 hr {
     border: none;
     height: 1px;
@@ -115,4 +102,17 @@ hr {
     position: relative;
     top: $nav-height;
     margin: 0 1rem;
+}
+
+/* table */
+table {
+    overflow-x: auto;
+}
+table, th, td {
+    border: 1px solid $secondary-dark;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 4px;
 }

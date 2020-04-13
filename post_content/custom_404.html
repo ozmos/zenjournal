@@ -1,0 +1,47 @@
+<p>404 errors are an inevitable part of internet life. Anyone who has spent time surfing the web will have come across this error at some point:</p>
+<blockquote class="wp-block-quote">
+    <p><strong>404. Not Found. The resource requested could not be found on this server!</strong></p><cite>The internet</cite>
+</blockquote>
+<p>The error is self explanatory: the web page doesn’t exist! 404 errors can be irritating for website users and if not taken control of can negatively effect website traffic and user experience. The remedy for this is to create a custom 404 page.</p>
+<h2> Why make a custom 404 page?</h2>
+<p>While good website management practices can go some way to minimizing the occurrence of 404 errors, it is nearly impossible to keep them from happening altogether. If a custom 404 page is not available the hapless user will be redirected to the default 404 error page for their web browser. These are typically featureless and will not have any information or branding specific to your website. Taking control of the 404 redirect can turn a negative user experience around and keep website users on your website. It also helps web crawlers find their way back to your website.</p>
+<h2>What should a custom 404 page contain?</h2>
+<p>At a minimum a 404 page should do three things:</p>
+<ol id="three-elements">
+    <li>Clearly let the user know that they are in the wrong place</li>
+    <li>A way to get back to the website</li>
+    <li>A way to contact the website owner or developer</li>
+</ol>
+<p>It is a good idea to paraphrase the generic 404 error message to let the visitor know what has happened. You can even use the same wording, the important thing is to give the visitor a clear message.</p>
+<p>Include the navigation bar and site map so visitors can easily get back to the main content. This will soften the impact of a 404 redirect. In addition to this it may be a good idea to include links to:</p>
+<ul>
+    <li> Popular articles from the same website</li>
+    <li>Important product pages</li>
+    <li>A search bar</li>
+</ul>
+<p>Use the 404 page as a way to redirect users to content you want them to see.</p>
+<h2>Don’t redirect 404 errors to the homepage</h2>
+<p>While this remains a common practice it is a bad idea as it confuses users. It is also bad for SEO as Google will register the home page as a soft 404 error.</p>
+<h2>How to create a custom 404 page</h2>
+<h3>Plugins</h3>
+<p>If you’re using a pre-made WordPress theme there’s a chance that a custom 404 page already exists. At the very least it will maintain the same style and include the header, footer and search bar. There are plugins available to further customise the 404 page. Most Content Management Systems have a way to customise 404 pages.</p>
+<h2>Custom code</h2>
+<p>If you’ve got a hand coded website it’s fairly easy to add a 404 page. Its basically a matter of:</p>
+<ol>
+    <li>Coding the page and adding it to the public facing directory</li>
+    <li>Configuring the server to direct 404 errors to that page</li>
+</ol>
+<h3>Coding the page</h3>
+<p>Create a file called <em>404.html</em> in the root directory. The file could also be written in PHP or theoretically any language capable of rendering HTML. Code the page as any other HTML file: with a head, title, meta tags, stylesheets etc. The style can be consistent with the rest of the site or you may prefer to create something unique, although it should still tie in with the overall brand of the website. Most importantly be sure to include the 3 elements outlined above.</p>
+<h3>Configuring the server to redirect 404 errors</h3>
+<p>This can be done using the <em>.htaccess</em> file. If your website doesn’t already have one create a file called <em>.htaccess </em>and place it in the root directory. Then paste this code into it and save it:</p>
+<pre class="wp-block-code"><code>ErrorDocument 404 /404.html</code></pre>
+<p>Once these files are uploaded to the live website you can test the results by trying to access a page which doesn’t exist in the website. For example mydomain.com<em>/nosuchpage </em>should result in a 404 error and the server should redirect you to the custom 404 page.</p>
+<h2>References</h2>
+<ul>
+    <li>(2019, August 16). Error 404 not found – What does it mean &amp; how to fix it! – IONOS. Retrieved March 12, 2020, from <a rel="noreferrer noopener" aria-label=" (opens in a new tab)" href="https://www.ionos.com/digitalguide/websites/website-creation/what-does-the-404-not-found-error-mean/" target="_blank">https://www.ionos.com/digitalguide/websites/website-creation/what-does-the-404-not-found-error-mean/</a></li>
+    <li>(2019, May 9). The most important HTTP status codes at a glance – IONOS. Retrieved March 12, 2020, from <a rel="noreferrer noopener" aria-label=" (opens in a new tab)" href="https://www.ionos.com/digitalguide/hosting/technical-matters/the-most-important-http-status-codes-at-a-glance/" target="_blank">https://www.ionos.com/digitalguide/hosting/technical-matters/the-most-important-http-status-codes-at-a-glance/</a></li>
+    <li>(n.d.). Why Your 404 Page Matters in SEO – Woorank. Retrieved March 12, 2020, from <a rel="noreferrer noopener" aria-label=" (opens in a new tab)" href="https://www.woorank.com/en/edu/seo-guides/why-404-pages-are-important-for-seo" target="_blank">https://www.woorank.com/en/edu/seo-guides/why-404-pages-are-important-for-seo</a></li>
+    <li>(2008, June 13). How To: Create a Great 404 Page Not Found Error … – Portent. Retrieved March 12, 2020, from <a rel="noreferrer noopener" aria-label=" (opens in a new tab)" href="https://www.portent.com/blog/featured/create-a-great-404-page.htm" target="_blank">https://www.portent.com/blog/featured/create-a-great-404-page.htm</a></li>
+    <li>(n.d.). Custom 404 Error Page in PHP : 5 Steps – Instructables. Retrieved March 12, 2020, from <a href="https://www.instructables.com/id/Custom-404-Error-Page-in-PHP/" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">https://www.instructables.com/id/Custom-404-Error-Page-in-PHP/</a></li>
+</ul>

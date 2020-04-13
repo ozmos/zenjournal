@@ -3,11 +3,11 @@ include 'inc/html_head.php';
 include 'inc/header.php';
 ?>
 
-<main class="outer flex wrap">
+<main class="outer flex wrap page">
   <!-- left column -->
-    <section class="col-8">
+    <section class="row">
     <!-- main content -->
-      <article class="blog-article card">
+      <article class="blog-article card" id="<?php echo $page['id'];?>">
       <!-- article header -->
         <div class="article-header flex wrap">
           <section>
@@ -15,7 +15,9 @@ include 'inc/header.php';
               <?php echo $page['art_title']; ?>
             </h2>
             <h3 class="art-subheading">
-              <?php echo $page['auth'] . ', ' . $page['date']; ?> 
+              <?php if ($page['subtitle']) {
+                echo $page['subtitle']; 
+              }?> 
             </h3>
           </section>
           <section class="image">

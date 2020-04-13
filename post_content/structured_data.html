@@ -1,0 +1,62 @@
+<p>Structured data is an important aspect of technical SEO and shouldn’t be overlooked. It may seem complicated but there are various tools and documentation to developers and SEO specialists to include it in their arsenal or tools. You will not only visually enhance your SEO page results but get a boost in page rankings.</p>
+<h2>What is structured data?</h2>
+<p>Structured data is information organized into a standardized format which helps search engines to crawl, organise and display content. It is often referred to as <a rel="noreferrer noopener" aria-label="Schema (opens in a new tab)" href="https://schema.org/" target="_blank">Schema</a> markup as this is the most used ‘vocabulary’ of structured data by Search Engine Optimization professionals.</p>
+<p>There are three main types of structured data used for SEO:</p>
+<ul>
+    <li>JSON-LD</li>
+    <li>Microdata</li>
+    <li>RDFa</li>
+</ul>
+<p>Google recommends using JSON-LD so this is what I would recommend using too.</p>
+<h3>JSON-LD</h3>
+<p><strong>JSON-LD</strong> is embedded into markup with script tags. It doesn’t render on the web page itself but is visible to search bots. Any structured data including JSON-LD should always relate directly to content in the page. Google penalizes empty web pages which only include structured data. Below is an example of how JSON-LD is written. This snippet contains contact information for a company and is taken directly from the Google guide on structured data. It can be included in the head or body of the HTML.</p>
+<pre class="wp-block-code"><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "url": "http://www.example.com",
+  "name": "Unlimited Ball Bearings Corp.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-401-555-1212",
+    "contactType": "Customer service"
+  }
+}
+&lt;/script&gt;</code></pre>
+<p>If you’ve ever written JSON or JavaScript you’ll be familiar with the syntax used. It basically consists of double quoted strings organised into key-value pairs. These are encapsulated by a pair of curly brackets. Notice how the “contactPoint” key has more key-value pairs in curly brackets as its value? This is called nesting and is common in JSON. If this all looks a bit technical don’t worry as there are visual tools to add structured data without writing a single line of code.</p>
+<h2>How Does Using Structured Data help SEO?</h2>
+<p>Adding structured data helps search engines to determine what a web page or website is all about. By making it easier for bots to crawl your website you’ll be rewarded with an SEO boost! Structured data can enrich the way your webpage appears in search results with visual enhancements like images, knowledge graphs, interactive features and carousels. For example if you do a google search (in desktop or laptop) for chicken soup you should see a carousel of recipe cards appear.</p>
+<figure><img src="https://findability-blog.samadhijournal.com/wp-content/uploads/2020/03/recipe-carousel.png" alt="This carousel generated from JDON-LD structured data displays rich content in search results.">
+    <figcaption>This carousel generated from JDON-LD structured data displays rich content in search results.</figcaption>
+</figure>
+<p>For each card in the carousel there is an image, title, rating, the name of the website it comes from, cooking time and the first line of ingredients. All this in a small, well presented card. This also appears at the top of the first page of search results. So not only is the format visually appealing and informative, each of these recipes are given priority on the results page due to structured data.</p>
+<h2>How can I use structured data?</h2>
+<p>To include structured data in your website there are three main ways:</p>
+<ol>
+    <li>By using plugins</li>
+    <li>Using Google’s structured data markup helper</li>
+    <li>Hand coding</li>
+</ol>
+<h3>Plugins</h3>
+<p>If you’re using CMS for your website there’s probably a plugin available to include structured data in your markup. This is the easiest way to add structured data or schema markup to your website. WordPress developers can use the <a href="https://wordpress.org/plugins/schema-app-structured-data-for-schemaorg/" target="_blank" rel="noreferrer noopener" aria-label="Schema App Structured Data (opens in a new tab)">Schema App Structured Data</a> plugin to automatically generate schema markup for their websites. Plugins are also available for other popular Content Management Systems including:</p>
+<ul>
+    <li><a href="https://apps.shopify.com/json-ld-for-seo" target="_blank" rel="noreferrer noopener" aria-label="Shopify (opens in a new tab)">Shopify</a></li>
+    <li><a href="https://www.drupal.org/project/json_ld_schema" target="_blank" rel="noreferrer noopener" aria-label="Drupal (opens in a new tab)">Drupal</a></li>
+    <li><a href="https://extensions.joomla.org/extension/google-structured-data/" target="_blank" rel="noreferrer noopener" aria-label="Joomla (opens in a new tab)">Joomla</a></li>
+</ul>
+<h3>Google structured data helper</h3>
+<p><a href="https://www.google.com/webmasters/markup-helper/">G</a><a href="https://www.google.com/webmasters/markup-helper/" target="_blank" rel="noreferrer noopener" aria-label="oogle  (opens in a new tab)">oogle </a>has a handy visual tool for generating structured data. This is a good option if you are developing a hand coded website without the aid of a CMS. Simply type in the URL of your website, or paste in the markup of your webpage and use the available data type options to markup up the appropriate sections of each page. The tool will render the web page for you so you can select each element visually. Then press the “create html” button and select the syntax you want it to generate from the drop down box. I recommend using JSON-LD rather than Microdata.</p>
+<h3>Hand coding structured data</h3>
+<p>This last option will be more difficult to implement as there is quite a lot to learn. However it also offers the most flexibility and power. Be sure to follow the <a href="https://developers.google.com/search/docs/guides/sd-policies" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">general guidelines</a> for structured data set out by Google and refer to <a rel="noreferrer noopener" aria-label="Shema.org (opens in a new tab)" href="http://schema.org" target="_blank">Shema.org</a> for detailed documentation. <a rel="noreferrer noopener" aria-label="Google (opens in a new tab)" href="https://developers.google.com/search/reference/overview" target="_blank">Google</a> also has a great reference for coding schema markup.</p>
+<h2>Further reading</h2>
+<ul>
+    <li><a rel="noreferrer noopener" aria-label=" (opens in a new tab)" href="https://developers.google.com/search/docs/guides/search-gallery" target="_blank">Google developer docs</a></li>
+    <li><a href="http://schema.org" target="_blank" rel="noreferrer noopener" aria-label="Schema.org official website (opens in a new tab)">Schema.org official website</a></li>
+</ul>
+<h2>References</h2>
+<ul>
+    <li>(n.d). Structured Data Markup Helper – Google. Retrieved March 12, 2020, from <a rel="noreferrer noopener" aria-label="https://www.google.com/webmasters/markup-helper/ (opens in a new tab)" href="https://www.google.com/webmasters/markup-helper/" target="_blank">https://www.google.com/webmasters/markup-helper/</a></li>
+    <li>(n.d.). Article | Search for Developers | Google Developers. Retrieved March 12, 2020, from <a rel="noreferrer noopener" aria-label=" (opens in a new tab)" href="https://developers.google.com/search/docs/data-types/article" target="_blank">https://developers.google.com/search/docs/data-types/article</a></li>
+    <li>(n.d.). How to Add Structured Data to Your Website – Neil Patel. Retrieved March 12, 2020, from <a rel="noreferrer noopener" aria-label=" (opens in a new tab)" href="https://neilpatel.com/blog/structured-data/" target="_blank">https://neilpatel.com/blog/structured-data/</a></li>
+    <li>(2017, September 6). The Beginner’s Guide to Structured Data for SEO: A Two … – Moz. Retrieved March 12, 2020, from <a href="https://moz.com/blog/structured-data-for-seo-1" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">https://moz.com/blog/structured-data-for-seo-1</a></li>
+</ul>

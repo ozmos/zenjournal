@@ -1,12 +1,5 @@
 <!-- right column -->
 <aside class="col-4">
-  <article id="about" class="about card">
-    <h2>About me</h2>
-    <img src="images/profile.jpg" alt="picture of the author" />
-    <p>
-      Hi, I'm Osamu.  I've been meditating my whole adult life, following both the Theravada Buddhist and secular traditions.  While I'm not an expert I hope I can offer some valuable insights gained from my experiences in meditation. 
-    </p>  
-  </article>
   <article class="card">
     <h2>Featured articles</h2>
     

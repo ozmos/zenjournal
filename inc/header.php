@@ -18,7 +18,10 @@
       <a class="hover-green-dark" href="index.php#about">About</a>
     </li>
     <li class="nav-item">
-      <a class="hover-green-dark" href="articles.php">Articles</a>
+      <a class="hover-green-dark" href="blog.php">Blog</a>
+    </li>
+    <li class="nav-item">
+      <a class="hover-green-dark" href="google_search_console.php">Research Topic</a>
     </li>
     <li class="nav-item">
       <a class="hover-green-dark" href="contact.php">Contact</a>
