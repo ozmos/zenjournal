@@ -6,7 +6,7 @@ include 'inc/header.php';
 ?>
 
 
-<main class="outer flex wrap page">
+<main class="outer flex wrap row">
   <header class="page-header row">
   	<h1 class="extra-large">Error 404</h1>
   	<p class="subheading">The page you're looking for doesn't exist</p>

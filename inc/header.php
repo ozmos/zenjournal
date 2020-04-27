@@ -30,7 +30,7 @@
       </li>
       <!-- best practices -->
       <li class="nav-item">
-        <a class="hover-green-dark" href="seo_best_practices.php">Best Practies</a>
+        <a class="hover-green-dark" href="seo_best_practices.php">Best Practices</a>
       </li>
       <!-- research topic -->
       <li class="nav-item">
