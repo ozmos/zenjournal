@@ -1,7 +1,10 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /* Findability stylesheet */
 /** globals **/
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 /* set root font size */
 html {
@@ -42,18 +45,29 @@ main {
   padding-bottom: 4rem; }
 
 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex; }
 
 .flex-centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .wrap {
-  flex-wrap: wrap; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .is-spaced-between {
-  justify-content: space-between; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .card {
   margin-top: 20px;
@@ -83,11 +97,15 @@ a {
 /* hover green light */
 .hover-green-light:link, .hover-green-light:visited {
   color: blue;
+  -webkit-transition: 0.35s;
+  -o-transition: 0.35s;
   transition: 0.35s; }
 
 .hover-green-light:hover {
   color: #fff;
   background-color: blue;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
   transition: 0.1s; }
 
 .hover-green-light:active {
@@ -96,11 +114,15 @@ a {
 
 /* hover green dark text */
 .hover-green-dark {
+  -webkit-transition: 0.35s;
+  -o-transition: 0.35s;
   transition: 0.35s; }
 
 .hover-green-dark:hover {
   background-color: lightblue;
   color: #111;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
   transition: 0.1s; }
 
 .hover-green-dark:active {
@@ -155,6 +177,7 @@ dt {
 
 /* navbar */
 nav {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 100%;
@@ -162,8 +185,12 @@ nav {
   color: #fff;
   height: 60px;
   margin: 0;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Inconsolata", monospace;
   font-size: 1.2rem;
   z-index: 1000;
@@ -182,8 +209,13 @@ nav {
   nav a:active {
     color: #fff; }
   nav .toggle-reveal {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   nav #menu-toggle {
     position: relative;
     display: inline-block;
@@ -200,11 +232,16 @@ nav {
 
 /* header */
 .site-header {
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #fff;
   position: relative;
-  box-shadow: 0 4px 8px -2px rgba(102, 102, 102, 0.5); }
+  -webkit-box-shadow: 0 4px 8px -2px rgba(102, 102, 102, 0.5);
+          box-shadow: 0 4px 8px -2px rgba(102, 102, 102, 0.5); }
   .site-header .headings {
     padding: 2rem 10px;
     text-align: center; }
@@ -228,14 +265,20 @@ nav {
 
 @media (max-width: 768px) {
   .site-header {
-    flex-direction: column; } }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
 @media (min-width: 769px) {
   #skip-to-content {
     position: absolute;
     left: 20px; } }
 /* articles */
 .article-header {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center; }
   .article-header .art-heading {
     font-size: 2.2rem;
@@ -263,6 +306,8 @@ nav {
     white-space: pre-line; }
 
 .hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.6))), url(../images/searching.jpg);
+  background: -o-linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6)), url(../images/searching.jpg);
   background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6)), url(../images/searching.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -283,6 +328,8 @@ nav {
     #actions .action-links a {
       padding: 20px;
       background-color: rgba(255, 255, 255, 0.7);
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
       transition: all 0.3s;
       cursor: pointer; }
     #actions .action-links a:hover {
@@ -313,10 +360,13 @@ nav {
       width: 100%;
       margin-right: 0; } }
   #google_search_console .panel {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; }
   @media (max-width: 768px) {
     #google_search_console .panel {
-      flex-wrap: wrap; } }
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
 
 aside h2 {
   background: #111;
@@ -340,8 +390,11 @@ aside h4 {
   max-width: 400px; }
 
 footer {
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 9rem;
   color: #444;
   padding: 20px 0;
@@ -395,11 +448,15 @@ footer {
     margin-top: 20px;
     text-transform: uppercase;
     letter-spacing: 0.5em;
+    -webkit-transition: 0.35s;
+    -o-transition: 0.35s;
     transition: 0.35s; }
   #contact main #submit:hover {
     cursor: pointer;
     background-color: lightblue;
     color: #111;
+    -webkit-transition: 0.1s;
+    -o-transition: 0.1s;
     transition: 0.1s; }
   #contact main #submit:active {
     background-color: #C9FD62;
@@ -459,8 +516,12 @@ footer {
   nav .nav-list {
     min-width: 400px;
     max-width: 1400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly; }
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; }
   nav #menu-toggle {
     display: none; } }
 /* desktop rules */
@@ -475,4 +536,3 @@ footer {
     width: 100%;
     padding: 20px; } }
 
-/*# sourceMappingURL=styles.css.map */
