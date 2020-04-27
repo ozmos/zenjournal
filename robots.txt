@@ -1,0 +1,12 @@
+User-Agent: *
+Disallow: /css/
+Disallow: /blog_articles/
+Disallow: /documents/
+Disallow: /inc/
+Disallow: /js/
+Disallow: /post_content/
+Disallow: /templates/
+Disallow: /404.php
+Disallow: /.git/
+
+Sitemap: https://www.samadhijournal.com/findability/sitemap.xml

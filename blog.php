@@ -7,17 +7,27 @@ include 'inc/header.php';
 
 <main class="outer flex wrap">
   <!-- left column -->
-    <section class="col-8">
+    <section class="row">
     <!-- main content -->
-      <article class="feed card">
+      <article id="page-content" class="feed card">
       <!-- article header -->
         <div class="article-header">
-            <h2>
+            <h1>
               <?php echo $page['art_title']; ?>
-            </h2>
+            </h1>
+            <?php
+        if ($page['subtitle']) {
+              ?>
+            <strong class="art-subheading">
+              <?php
+                echo $page['subtitle']; 
+              ?> 
+            </strong>
+            <?php
+            }
+            ?>
         </div>
         <!-- article content -->
-        <?php echo $page['content']; ?>
       </article>
 
       <!-- display all posts -->
@@ -27,19 +37,19 @@ include 'inc/header.php';
         <article class="card">
         <div class="article-header flex wrap">
           <section>
-            <h3 class="art-heading">
+            <h2 class="art-heading">
               <a class="hover-green-dark" href="<?php echo $preview['id']?>.php">
               <?php echo $preview['art_title']; ?>
               </a>
-            </h3>
-            <h4 class="art-subheading">
+            </h2>
+            <h3 class="art-subheading">
               <?php echo $preview['auth'] . ', ' . $preview['date']; ?> 
-            </h4>
+            </h3>
           </section>
                
         </div>
         <section class="blog">
-          <?php echo substr($preview['content'], 0, 400) . '<a class="hover-green-light" href="' . $preview['id'] . '.php"> ...Continue reading</a>'; ?>
+          <?php echo $preview['description'] . '<a class="hover-green-light" href="' . $preview['id'] . '.php"> ...Continue reading</a>'; ?>
           </p>
         </section>
       </article>

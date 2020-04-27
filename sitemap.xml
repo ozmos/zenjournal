@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -8,43 +9,63 @@
 
 
 <url>
-  <loc>https://samadhijournal.com/</loc>
-  <lastmod>2020-02-24T10:02:38+00:00</lastmod>
+  <loc>https://samadhijournal.com/findability/</loc>
+  <lastmod>2020-04-18T05:36:42+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://samadhijournal.com/index.php</loc>
-  <lastmod>2020-02-24T10:02:38+00:00</lastmod>
+  <loc>https://samadhijournal.com/findability/index.php</loc>
+  <lastmod>2020-04-18T05:36:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://samadhijournal.com/articles.php</loc>
-  <lastmod>2020-02-24T10:02:38+00:00</lastmod>
+  <loc>https://samadhijournal.com/findability/blog.php</loc>
+  <lastmod>2020-04-18T05:36:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://samadhijournal.com/contact.php</loc>
-  <lastmod>2020-02-24T10:02:38+00:00</lastmod>
+  <loc>https://samadhijournal.com/findability/seo_best_practices.php</loc>
+  <lastmod>2020-04-18T05:36:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://samadhijournal.com/intro.php</loc>
-  <lastmod>2020-02-24T10:02:38+00:00</lastmod>
+  <loc>https://samadhijournal.com/findability/google_search_console.php</loc>
+  <lastmod>2020-04-18T05:36:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://samadhijournal.com/sitting_meditation.php</loc>
-  <lastmod>2020-02-24T10:02:38+00:00</lastmod>
+  <loc>https://samadhijournal.com/findability/resources.php</loc>
+  <lastmod>2020-04-18T05:36:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://samadhijournal.com/walking_meditation.php</loc>
-  <lastmod>2020-02-24T10:02:38+00:00</lastmod>
+  <loc>https://samadhijournal.com/findability/glossary.php</loc>
+  <lastmod>2020-04-18T05:36:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://samadhijournal.com/hiking.php</loc>
-  <lastmod>2020-02-24T10:02:38+00:00</lastmod>
+  <loc>https://samadhijournal.com/findability/about.php</loc>
+  <lastmod>2020-04-18T05:36:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://samadhijournal.com/findability/contact.php</loc>
+  <lastmod>2020-04-18T05:36:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://samadhijournal.com/findability/seo_techniques.php</loc>
+  <lastmod>2020-04-18T05:36:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://samadhijournal.com/findability/custom_404.php</loc>
+  <lastmod>2020-04-18T05:36:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://samadhijournal.com/findability/structured_data.php</loc>
+  <lastmod>2020-04-18T05:36:42+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 

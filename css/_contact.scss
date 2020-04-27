@@ -1,4 +1,4 @@
-#contact {
+#contact main {
     label {
         display: block;
     }
@@ -32,7 +32,7 @@
 
     #submit:hover {
         cursor: pointer;
-        background-color: $hover;
+        background-color: $hover-dark;
         color: $primary-dark;
         transition: 0.1s;
     }

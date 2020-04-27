@@ -1,24 +1,31 @@
 <?php
 include 'inc/html_head.php';
 include 'inc/header.php';
+$page_title = $page['id'] === 'home' 
+? '<h2 class="art-heading">' . $page['art_title'] . '</h2>'
+: '<h1 class="art-heading">' . $page['art_title'] . '</h1>';
 ?>
 
 <main class="outer flex wrap page">
   <!-- left column -->
     <section class="row">
     <!-- main content -->
-      <article class="blog-article card" id="<?php echo $page['id'];?>">
+      <article id="page-content" class="blog-article card">
       <!-- article header -->
         <div class="article-header flex wrap">
           <section>
-            <h2 class="art-heading">
-              <?php echo $page['art_title']; ?>
-            </h2>
-            <h3 class="art-subheading">
-              <?php if ($page['subtitle']) {
+            <?php 
+            echo $page_title;
+            if ($page['subtitle']) {
+              ?>
+            <strong class="art-subheading">
+              <?php
                 echo $page['subtitle']; 
-              }?> 
-            </h3>
+              ?> 
+            </strong>
+            <?php
+            }
+            ?>
           </section>
           <section class="image">
             <?php
@@ -51,9 +58,12 @@ include 'inc/header.php';
         
       </article>
     </section>
+    <hr />
     <!-- end left column -->
-    <?php include 'inc/aside.php'; ?>
-    <?php include 'inc/author.php'; ?>
+    <?php 
+   
+    include 'inc/aside.php'; ?>
+  
     <!-- end outer div and main -->
     
 </main>

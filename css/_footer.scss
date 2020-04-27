@@ -8,22 +8,60 @@ footer {
     position: relative;
     top: $nav-height;
     bottom: 0;
+
     section {
         padding: 0 $padding;
     }
-    a:link,
-    a:visited,
-    a:active {
+
+    a:link, a:visited, a:active {
         color: $secondary-dark;
     }
+
     a:hover {
         color: $primary-dark;
         border: 1px dotted $primary-dark;
     }
+
     .nav-item {
         margin-left: $padding;
     }
+
+    .nav-item a:hover {
+        border: 1px dotted $secondary-dark;
+    }
+
     .nav-list:first-child {
         margin-left: 0;
     }
+
+    #creative-commons {
+        .icon {
+            width: 88px;
+            display: inline-block;
+        }
+
+    }
+
+    .site-map {
+        width: 100%;
+
+    }
+
 }
+
+.sub-list {
+    list-style: none;
+    padding-left: 0;
+    .sub-list-item {
+        margin-left: 0;
+    }
+}
+
+// @media (min-width: 769px) {
+//     footer {
+//         section {
+//             width: 30%;
+
+//         }
+//     }
+// }

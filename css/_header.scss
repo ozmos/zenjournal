@@ -1,29 +1,52 @@
 /* header */
 
-header {
-    flex-direction: column;
+.site-header {
     justify-content: center;
     align-items: center;
     background-color: $primary-light;
     position: relative;
-    top: $nav-height;
     box-shadow: 0 4px 8px -2px rgba(102, 102, 102, 0.5);
     .headings {
         padding: 2rem 10px;
+        text-align: center;
     }
-    h1,
-    h2 {
+    
+    .site-description,
+    .site,
+    .site-title {
         text-align: center;
         margin: 0;
     }
-    h2 {
+    .site-description {
         font-size: 0.85rem;
         font-style: italic;
         font-weight: 100;
     }
+    .site-logo {
+    // background-image: url("../images/logo.svg");
+    width: $padding;
+    height: $padding;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+}
 }
 
-h1 {
-    font-family: $title-font;
-    font-size: 3rem;
+.site-title {
+    font-family: "Inconsolata", monospace;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 769px) {
+    #skip-to-content {
+        position:absolute;
+        left:$padding;
+    }
 }

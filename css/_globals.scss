@@ -1,23 +1,33 @@
 /* containers */
 main {
     position: relative;
-    top: $nav-height;
 }
 
 .outer {
     width: 100%;
     margin: 0 auto;
-    padding: 4rem 0 4rem 0;
+    padding-bottom: 4rem;
 }
 
 .flex {
     display: flex;
 }
 
+.flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .wrap {
     flex-wrap: wrap;
 }
 
+.is-spaced-between {
+    justify-content: space-between;
+   
+
+}
 .card {
     margin-top: $padding;
     padding: 0 $padding/2;
@@ -29,10 +39,7 @@ main {
 
 }
 
-/* render line breaks */
-p {
-    white-space: pre-line;
-}
+
 
 /* responsive images */
 img {
@@ -40,12 +47,12 @@ img {
     height: auto;
 }
 
-/* links and lists */
+links and lists
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
+} 
 
 a {
     text-decoration: none;
@@ -64,7 +71,7 @@ a {
 
 .hover-green-light:hover {
     color: $primary-light;
-    background-color: $hover;
+    background-color: $hover-light;
     transition: 0.1s;
 }
 
@@ -79,7 +86,7 @@ a {
 }
 
 .hover-green-dark:hover {
-    background-color: $hover;
+    background-color: $hover-dark;
     color: $primary-dark;
     transition: 0.1s;
 }
@@ -115,4 +122,18 @@ table, th, td {
 
 th, td {
     padding: 4px;
+}
+
+/* text */
+.text-centered {
+    text-align: center;
+}
+
+/* hidden elements */
+.hidden {
+    position: absolute;
+    font-size: 0px;
+    left: -700000px;
+    margin: 0;
+    padding: 0;
 }

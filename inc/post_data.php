@@ -6,15 +6,16 @@ $post_data = [
     'title' => 'Findability - Home',
     'description' => 'Home page for Findability Mini Website',
     'id' => 'home',
-    'img' => 'meditation-grass.jpg',
-    'alt' => 'man sitting in meditation on grass',
+    'img' => 'searching.jpg',
+    'alt' => 'graphic of person looking through binoculars',
     'art_title' => 'Welcome to the Findability Mini Website',
+    'subtitle' => 'SEO, Findability and Web Development',
     'auth' => 'Osamu Morozumi',
     'date' => '7th June 2019',
-    'content' => '<p>This is my mini findability website.  I hope you enjoy it.</p>',
+    'content' => file_get_contents('post_content/home.html'),
     'actions' => [
-      ['href' => intro.php, 'content' => 'Read More about mindfulness'],
-      ['href' => sitting_meditation.php, 'content' => 'Learn How to Meditate']
+      ['href' => 'seo_techniques.php', 'content' => 'Read More about SEO techniques'],
+      ['href' => 'blog.php', 'content' => 'Go to blog articles']
     ]
   ],
   'blog' => [
@@ -23,6 +24,7 @@ $post_data = [
     'description' => 'Blog articles for the Findability Website',
     'id' => 'blog',
     'art_title' => 'Findability Blog',
+    'subtitle' => 'The Latest Articles on SEO and Findability',
     'auth' => '',
     'date' => '',
     'content' => ''
@@ -30,7 +32,7 @@ $post_data = [
   'seo_techniques' => [
     'post' => true,
     'title' => 'Findability | Blog | SEO Techniques and Utilities',
-    'description' => 'Overview of SEO techniques and utilities',
+    'description' => 'A brief overview of SEO techniques and utilities',
     'id' => 'seo_techniques',
     'img' => 'seo-techniques.jpg',
     'alt' => 'SEO keywords in various languages',
@@ -78,6 +80,46 @@ $post_data = [
     'date' => '13th April 2020',
     'content' => file_get_contents('post_content/google_search_console.html')
   ],
+  'resources' => [
+    'post' => false,
+    'title' => 'Findability | Findability Resources',
+    'description' => 'A list of excellent resources for findability, SEO and digital marketing',
+    'id' => 'resources',
+    'art_title' => 'Findability Resources',
+    'auth' => 'Osamu Morozumi',
+    'date' => '13th April 2020',
+    'content' => file_get_contents('post_content/resources.html')
+  ],
+  'glossary' => [
+    'post' => false,
+    'title' => 'Findability | Glossary',
+    'description' => 'Technical terms used in SEO and findability',
+    'id' => 'glossary',
+    'art_title' => 'Glossary',
+    'auth' => 'Osamu Morozumi',
+    'date' => '14th April 2020',
+    'content' => file_get_contents('post_content/glossary.html')
+  ],
+  'about' => [
+    'post' => false,
+    'title' => 'Findability | About',
+    'description' => 'Findability techniques used in this website',
+    'id' => 'about',
+    'art_title' => 'About this website',
+    'auth' => 'Osamu Morozumi',
+    'date' => '18th April 2020',
+    'content' => file_get_contents('post_content/about.html')
+  ],
+  'seo_best_practices' => [
+    'post' => false,
+    'title' => 'Findability | Best Practices',
+    'description' => 'SEO Best Practices',
+    'id' => 'seo_best_practices',
+    'art_title' => 'SEO Best Practices',
+    'auth' => 'Osamu Morozumi',
+    'date' => '18th April 2020',
+    'content' => file_get_contents('post_content/seo_best_practices.html')
+  ],
   'contact' => [
     'post' => false,
     'title' => 'Samadhi Journal - Contact',
@@ -85,10 +127,18 @@ $post_data = [
     'id' => 'contact',
     'img' => '',
     'alt' => '',
-    'art_title' => 'Get in Touch',
+    'art_title' => 'Contact Us',
+    'subtitle' => 'Please complete the form to get in touch',
     'auth' => '',
     'date' => '',
     'content' => ''
+  ],
+  '404' => [
+    'post' => false,
+    'title' => '404 - Page Not Found',
+    'description' => 'The page you are looking for doesn\'t exist',
+    'id' => '404',
+    'art_title' => '404 - Page not Found',
   ]
 ];
 

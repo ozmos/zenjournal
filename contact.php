@@ -8,13 +8,24 @@ include 'inc/header.php';
 <main class="outer">
  
 <!-- main content -->
-  <article class="blog-article card" id="<?php echo $page['id'];?>">
+  <article id="page-content" class="blog-article card">
   <!-- article header -->
     <div class="article-header flex wrap">
       <section class="article-header">
-        <h2>
+        <h1>
           <?php echo $page['art_title']; ?>
-        </h2>
+        </h1>
+        <?php
+        if ($page['subtitle']) {
+              ?>
+            <strong class="art-subheading">
+              <?php
+                echo $page['subtitle']; 
+              ?> 
+            </strong>
+            <?php
+            }
+            ?>
       </section>
     </div>
     <!-- contact form -->
@@ -25,6 +36,7 @@ include 'inc/header.php';
         </div>
         <div class="elem-group">
         <label for="m77">*Your Email</label>
+        <label for="m66" class="hidden">*Your Email</label>
         <input type="email" id="m66" name="m66" placeholder="Your Valid Email*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" minlength="8" maxlength="255"/>
         <input type="email" id="m77" name="m77" placeholder="john.doe@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" minlength="8" maxlength="255" title="Please provide a valid email address" required>
         </div>

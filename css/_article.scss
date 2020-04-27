@@ -32,3 +32,10 @@
         font-size: 2.5rem;
     }
 }
+
+.blog-article {
+    /* render line breaks */
+p {
+    white-space: pre-line;
+}
+}
