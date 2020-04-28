@@ -49,6 +49,7 @@ include 'inc/header.php';
                
         </div>
         <section class="blog">
+          <p>
           <?php echo $preview['description'] . '<a class="hover-green-light" href="' . $preview['id'] . '.php"> ...Continue reading</a>'; ?>
           </p>
         </section>

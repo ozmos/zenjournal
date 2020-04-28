@@ -31,7 +31,7 @@ $page_title = $page['id'] === 'home'
             <?php
             if ($page['img']) {
               ?>
-            <img class="featured-img" src="images/<?php echo $page['img'];?>" alt="<?php echo $page['alt'];?>"  />
+            <img class="featured-img" src="images/<?php echo $page['img'];?>" alt="<?php echo $page['alt'];?>" width=100% height=auto />
             <?php
             }
             ?>

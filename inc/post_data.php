@@ -14,7 +14,7 @@ $post_data = [
     'date' => '7th June 2019',
     'content' => file_get_contents('post_content/home.html'),
     'actions' => [
-      ['href' => 'seo_techniques.php', 'content' => 'Read More about SEO techniques'],
+      ['href' => 'seo_techniques.php', 'content' => 'Read More about SEO'],
       ['href' => 'blog.php', 'content' => 'Go to blog articles']
     ]
   ],

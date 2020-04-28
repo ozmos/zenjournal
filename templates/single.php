@@ -5,7 +5,6 @@ $page_title = $page['id'] === 'home'
 ? '<h2 class="art-heading">' . $page['art_title'] . '</h2>'
 : '<h1 class="art-heading">' . $page['art_title'] . '</h1>';
 ?>
-?>
 
 <main class="outer flex wrap">
   <!-- left column -->
@@ -35,7 +34,7 @@ $page_title = $page['id'] === 'home'
             <?php
             if ($page['img']) {
               ?>
-            <img class="featured-img" src="images/<?php echo $page['img'];?>" alt="<?php echo $page['alt'];?>"  />
+            <img class="featured-img" src="images/<?php echo $page['img'];?>" alt="<?php echo $page['alt'];?>" width=100% height=auto />
             <?php
             }
             ?>

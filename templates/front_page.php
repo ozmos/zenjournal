@@ -34,7 +34,7 @@ $page_title = $page['id'] === 'home'
                 $actions = $page['actions'];
                 foreach ($actions as $action) {
                 ?>
-                <strong class="action-links" ><a class="hover-green-dark" ref="<?php echo $action['href'];?>"><?php echo $action['content'];?></a></strong>  
+                <strong class="action-links" ><a class="hover-green-dark" href="<?php echo $action['href'];?>"><?php echo $action['content'];?></a></strong>  
                 
                 <?php
               }
