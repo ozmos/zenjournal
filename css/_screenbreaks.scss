@@ -1,9 +1,11 @@
-/* desktop rules */
+
+
+/* laptop rules */
 
 @media (min-width: 769px) {
-    body {
-        background: linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.93)), url(/images/snow.jpg);
-        background-attachment: fixed;
+  
+    .outer {
+        max-width: 80vw;
     }
     .card {
         margin: $padding;
@@ -13,6 +15,11 @@
         .col-#{$i} {
             width: 100%/12 * $i;
         }
+    }
+    // full width pages
+    .row {
+        width: 100%;
+        margin: auto;
     }
     /* nav rules */
     nav {
@@ -26,6 +33,13 @@
             display: none;
         }
     }
+}
+
+/* desktop rules */
+@media (min-width: 1824px) {
+    .outer {
+        max-width: 1400px;
+        } 
 }
 
 

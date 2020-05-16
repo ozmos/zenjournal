@@ -1,10 +1,10 @@
 <?php
 include 'inc/mail_functions.php';
-if ($_POST['m66'] != "") {
-  $page['title'] = 'Stop BOTS';
+// if ($_POST['m66'] != "") {
+//   $page['title'] = 'Stop BOTS';
  
-}
-elseif($_POST && $_POST['m66'] === '') {
+// }
+if ($_POST) {
     $name = "";
     $nameErr = "";
     $email = "";
@@ -25,8 +25,8 @@ elseif($_POST && $_POST['m66'] === '') {
       $errors[] = $nameErr;
     }
      
-    if(isset($_POST['m77']) && checkEmail($_POST['m77'])) {
-        $email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['m77']);
+    if(isset($_POST['email']) && checkEmail($_POST['email'])) {
+        $email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['email']);
         $email = filter_var($email, FILTER_SANITIZE_EMAIL);
     } else {
       $emailErr = "Please provide a valid email address";
@@ -71,7 +71,7 @@ include 'inc/header.php';
 ?>
 <main class="outer">
  <!-- main content -->
-   <article class="blog-article card">
+   <article class="blog-article card" id="content">
         
    <div class="article-header flex wrap">
           <section class="article-header">
@@ -94,6 +94,6 @@ include 'inc/header.php';
     ?>
     </ul>
   </section>
-
+<hr>
 </main>
 <?php include 'inc/footer.php'; ?>

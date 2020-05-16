@@ -1,3 +1,8 @@
 documents
 artwork
-
+# media
+# pdf
+findability/documents
+findability/artwork
+findability/images
+*.sh

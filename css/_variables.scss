@@ -4,14 +4,17 @@ monospace;
 $main-font: 'Noto Sans',
 sans-serif;
 //color
-$highlight: rgb(125, 184, 8);
-$hover: #A8FD00;
-$active: #C9FD62;
+$highlight: #1a1aff;
+$hover-dark: lightblue;
+$hover-light: #1a1aff;
+$info: rgb(30, 3, 215);
+$active: #4d4dff;
 $primary-dark: #111;
-$secondary-dark: #666;
+$secondary-dark: #444;
 $primary-light: #fff;
 $secondary-light: rgb(250, 250, 250);
 $transparent-light: linear-gradient(rbga(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1));
+$error: red;
 //sizes
 $page-width: 1400px;
 $padding: 20px;

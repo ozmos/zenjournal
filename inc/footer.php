@@ -1,4 +1,7 @@
 <footer class="flex wrap">
+    <?php
+    include 'inc/sitemap.php';
+    ?>
     <section>
     <span class="copyright-info">
             &copy; 
@@ -12,22 +15,17 @@
     <section>
             <a href="https://pcwebsites.com.au" target="blank">Perth Custom Websites</a>
     </section>
-    <section>
-      <ul class="nav-list flex wrap">
-        <li class="nav-item">
-          <a href="index.php#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="index.php#about">About</a>
-        </li><li class="nav-item">
-          <a href="articles.php">Articles</a>
-        </li><li class="nav-item">
-          <a href="contact.php">Contact</a>
-        </li>
-      </ul>
-    </section>
   </footer>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
-  <script src="js/nav.js"></script>
+  <!-- scripts with no dependancies -->
+   <?php
+    foreach (glob("js/globals/*.js") as $filename) {
+        echo '<script src="'. $filename . '"></script>';
+    }
+    
+    foreach ($scripts as $script) {
+        echo '<script src="js/'. $script . '.js"></script>';
+    }
+  ?>
 </body>
 </html>

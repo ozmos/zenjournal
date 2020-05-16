@@ -1,43 +1,84 @@
-form {
-    max-width: 600px;
-    margin: auto;
-    label {
-        display: block;
+/* contact form */
+#contact {
+    main {
+        label {
+            display: block;
+        }
+
+        label, input, textarea {
+            padding: $padding/2;
+        }
+
+        input, textarea {
+            border: 1px solid $secondary-dark;
+            border-radius: 0;
+        }
+
+        input, textarea {
+            width: 100%;
+        }
+
+        input:focus:invalid, textarea:focus:invalid {
+            border: 1px dotted $error;
+            color: $error;
+        }
+
+        #submit {
+            background-color: $primary-dark;
+            color: $primary-light;
+            border: none;
+            margin-top: $padding;
+            text-transform: uppercase;
+            letter-spacing: 0.5em;
+            transition: 0.35s;
+        }
+
+        #submit:hover {
+            cursor: pointer;
+            background-color: $hover-dark;
+            color: $primary-dark;
+            transition: 0.1s;
+        }
+
+        #submit:active {
+            background-color: $active;
+            color: $primary-light;
+        }
+
+        fieldset {
+            border: none;
+        }
+
+        max-width: 600px;
+        margin: auto;
+
+        .vcard {
+            margin-top: $padding*2;
+        }
+
     }
-    label,
-    input,
-    textarea {
-        padding: $padding/2;
-    }
-    input,
-    textarea {
-        border: 1px solid $secondary-dark;
-        border-radius: 0;
-    }
-    input,
-    textarea {
-        width: 100%;
-    }
-    #m66 {
-        display: none;
-    }
-    #submit {
-        background-color: $primary-dark;
-        color: $primary-light;
-        border: none;
-        margin-top: $padding;
-        text-transform: uppercase;
-        letter-spacing: 0.5em;
-        transition: 0.35s;
-    }
-    #submit:hover {
-        cursor: pointer;
-        background-color: $hover;
-        color: $primary-dark;
-        transition: 0.1s;
-    }
-    #submit:active {
-        background-color: $active;
-        color: $primary-light;
-    }
+
+}
+
+/* error tooltips */
+.tooltip {
+    display: block;
+    position: absolute;
+    left: 25em;
+    top: 0;
+    width: 10em;
+    padding: 0.5em;
+    font-weight: normal;
+    color: #FFF;
+    background-color: #88A61B;
+    border: solid 2px #0E3D59;
+}
+
+.tooltip[aria-hidden="true"] {
+    visibility: hidden;
+}
+
+.error {
+    color: #D92525;
+
 }

@@ -1,7 +1,7 @@
 /* navbar */
 
 nav {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     background-color: $primary-dark;
@@ -17,6 +17,7 @@ nav {
         background-color: $primary-dark;
         margin: 0;
         display: none;
+        list-style: none;
     }
     .nav-item {
         line-height: 2;

@@ -1,0 +1,36 @@
+
+.hero {
+	background: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.6)), url(../images/searching.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	background-color: rgba(255,255,255,0.7);
+	/* height: auto; */
+	min-height: 50vh;
+
+	.art-subheading {
+		color: $primary-dark;
+		font-size: 1.5rem;
+	}
+	
+}
+
+#actions {
+	padding: $padding;
+	.action-links {
+		display: block;
+		margin: $padding;
+		line-height: 2;
+		a {
+			padding: $padding;
+			background-color: rgba(255,255,255,0.7);
+			transition: all 0.3s;
+			cursor: pointer;
+		}
+
+		a:hover {
+			background-color: $hover-dark;
+		}
+	}
+}
